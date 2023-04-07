@@ -57,7 +57,6 @@ __Mitä tarkoittaa cross-site scripting (XSS)?__
 
 
 
-
 ## Lähteet
 https://terokarvinen.com/2023/tunkeutumistestaus-2023-kevat/#h2-totally-legit-sertificate </br>
 https://portswigger.net/web-security/sql-injection </br>
