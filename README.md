@@ -31,11 +31,24 @@ __Kuinka havaita SQL-injektio haavoittuvuudet?__
 * Manuaalisesti testaamalla esim:
   * Syöttämällä yhden lainausmerkin `'` ja tarkkailemalla virhekoodia, tai muuta epänormaalia.
   * Syöttämällä Boolean-ehtoja kuten `OR 1=1` ja tarkkailemalla eroja sovelluksen vastauksissa.
-  * Syöttämällä payloadeja, jotka on suunniteltu aiheuttamaan viivettä SQL-jonoissa, ja sen jälkeen tarkkailemalla vastausaikoja.
+  * Syöttämällä payloadeja, jotka on suunniteltu aiheuttamaan viivettä SQL-kyselyissä, ja sen jälkeen tarkkailemalla vastausaikoja.
   
-__
+__SQL-injektio asteet__
+* Ensimmäinen aste (First-order):
+  * Sovellus ottaa käyttäjän syötteen HTTP-pyynnöstä ja pyynnön käsittelyn aikana sisällyttää syötteessä olleen haitallisen osan osaksi SQL-kyselyä.
+* Toinen aste (Second-order), tallennettu SQL-injektio:
+  * sovellus ottaa käyttäjän syötteen HTTP-pyynnöstä ja tallentaa sen tulevaa käyttöä varten.
+
+__Kuinka estää SQL-injektio?__
+* Useimmat SQL-injektiot voidaan estää käyttämällä parametrisoituja kyselyitä (valmiit lauseet) merkkijonojen yhdistämisen sijaan kyselyn sisällä.
+  * Parametrisoituja kyselyjä voidaan käyttää tilanteissa, joissa epäluotettava syöte näkyy tietona kyselyn sisällä, mutta niitä ei voida käyttää käsittelemään epäluotettavaa syötettä kyselyn muissa osissa, kuten taulukoiden tai sarakkeiden nimissä tai ORDER BY -lauseessa. 
+* Jotta SQL-injektio voidaan estää tehokkaasti, kyselyssä käytetyn merkkijonon on aina oltava kovakoodattu vakio, eikä se saa koskaan sisältää muuttuvia tietoja.
 
 
+### PortSwigger: Cross-site scripting
+
+__Mitä tarkoittaa cross-site scripting (XSS)?__
+* 
 
 
 
