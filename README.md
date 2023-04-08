@@ -60,6 +60,7 @@ __Kuinka estää XSS hyökkäykset?__
 * Sisällön suojauskäytäntö (Content Security Policy).
 
 ---
+
 Olen tehnyt kaikki harjoitukset omalla tietokoneellani. </br>
 
 Koneen infot: </br>
@@ -90,6 +91,7 @@ Processors: 2 CPU
 
 Jos haluat enemmän tietoa minun tunkeutumistestausympäristöstä, niin voit lukea artikkelini: </br>
 https://github.com/JRissanen/h1-OmaLabra
+
 ---
 
 
