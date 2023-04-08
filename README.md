@@ -59,6 +59,38 @@ __Kuinka estää XSS hyökkäykset?__
 * Käyttämällä asianmukaisia response headereita.
 * Sisällön suojauskäytäntö (Content Security Policy).
 
+==
+Olen tehnyt kaikki harjoitukset omalla tietokoneellani. </br>
+
+Koneen infot: </br>
+Edition: Windows 10 Pro </br>
+Version: 22H2 </br>
+OS build: 19045.2728 </br>
+Processor: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz   3.19 GHz </br>
+Installed RAM: 16,0 GB </br>
+System type: 64-bit operating system, x64-based processor </br>
+
+Virtuaalikoneet ovat Oracle VM VirtualBoxissa, jonka versio on: Version 6.1.40. </br>
+
+Virtuaalikoneiden infot: </br>
+
+Metasploitable: </br>
+Type: Linux </br>
+Version: Debian (64-bit) </br>
+Base Memory: 1024 MB </br>
+Video Memory: 16 MB </br>
+Processors: 1 CPU
+
+Kali: </br>
+Type: Linux </br>
+Version: Debian (64-bit) </br>
+Base Memory: 2024 MB </br>
+Video Memory: 128 MB </br>
+Processors: 2 CPU
+
+Jos haluat enemmän tietoa minun tunkeutumistestausympäristöstä, niin voit lukea artikkelini: </br>
+https://github.com/JRissanen/h1-OmaLabra
+==
 
 
 ## a) ZAP! Asenna ZAP välimiesproxy ja näytä, että pystyt sieppaamaan liikennettä selaimesta.
