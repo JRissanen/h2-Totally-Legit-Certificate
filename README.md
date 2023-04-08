@@ -130,3 +130,8 @@ https://terokarvinen.com/2023/tunkeutumistestaus-2023-kevat/#h2-totally-legit-se
 https://portswigger.net/web-security/sql-injection </br>
 https://portswigger.net/web-security/cross-site-scripting </br>
 https://www.zaproxy.org/download/ </br>
+https://www.youtube.com/playlist?list=PLH8n_ayg-60J9i3nsLybper-DR3zJw6Z5 </br>
+
+
+
+
