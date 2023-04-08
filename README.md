@@ -59,8 +59,8 @@ __Kuinka estää XSS hyökkäykset?__
 * Käyttämällä asianmukaisia response headereita.
 * Sisällön suojauskäytäntö (Content Security Policy).
 
-==
-Olen tehnyt kaikki harjoitukset omalla tietokoneellani. </br>
+
+==Olen tehnyt kaikki harjoitukset omalla tietokoneellani. </br>
 
 Koneen infot: </br>
 Edition: Windows 10 Pro </br>
@@ -89,8 +89,8 @@ Video Memory: 128 MB </br>
 Processors: 2 CPU
 
 Jos haluat enemmän tietoa minun tunkeutumistestausympäristöstä, niin voit lukea artikkelini: </br>
-https://github.com/JRissanen/h1-OmaLabra
-==
+https://github.com/JRissanen/h1-OmaLabra ==
+
 
 
 ## a) ZAP! Asenna ZAP välimiesproxy ja näytä, että pystyt sieppaamaan liikennettä selaimesta.
