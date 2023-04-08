@@ -29,7 +29,7 @@ __SQL-injektio asteet__
 
 __Kuinka estää SQL-injektio?__
 * Useimmat SQL-injektiot voidaan estää käyttämällä parametrisoituja kyselyitä (valmiit lauseet) merkkijonojen yhdistämisen sijaan kyselyn sisällä.
-  * Parametrisoituja kyselyjä voidaan käyttää tilanteissa, joissa epäluotettava syöte näkyy tietona kyselyn sisällä, mutta niitä ei voida käyttää käsittelemään epäluotettavaa syötettä kyselyn muissa osissa, kuten taulukoiden tai sarakkeiden nimissä tai ORDER BY -lauseessa. 
+  * Parametrisoituja kyselyjä voidaan käyttää tilanteissa, joissa epäluotettava syöte näkyy tietona kyselyn sisällä, mutta niitä ei voida käyttää käsittelemään epäluotettavaa syötettä kyselyn muissa osissa, kuten taulukoiden tai sarakkeiden nimissä tai `ORDER BY` -lauseessa. 
 * Jotta SQL-injektio voidaan estää tehokkaasti, kyselyssä käytetyn merkkijonon on aina oltava kovakoodattu vakio, eikä se saa koskaan sisältää muuttuvia tietoja.
 
 
@@ -41,6 +41,27 @@ __Mitä tarkoittaa cross-site scripting (XSS)?__
 __Miten XSS toimii?__
 * Manipuloimalla haavoittuvaa verkkosivustoa niin, että se palauttaa käyttäjille haitallista JavaScriptiä.
 
+__Mihin XSS:ää voi käyttää?__
+* Hyökkääjän on mahdollista esimerkiksi:
+  * Esiintyä tai naamioitua uhrikäyttäjäksi ja suorittaa/ajaa kaikki toiminnot, jotka käyttäjä voi suorittaa.
+  * Lisätä troijalaisia haittaohjelmia verkkosivulle.
+
+__Kuinka havaita XSS haavoittuvuudet?__
+* Käyttämällä skanneria kuten Burp Suite's web vulnerability scanner.
+* Manuaalisesti:
+  * Lähettämällä jonkin yksinkertaisen yksilöllisen syötteen (kuten lyhyen aakkosnumeerisen merkkijonon) jokaiseen sovelluksen sisääntulopisteeseen.
+   * Jokaisen sijainnin tunnistamisen, johon lähetetty syöte palautetaan HTTP-vastauksissa.
+    * jokaisen sijainnin testaamisen yksitellen määrittämään, voidaanko muotoiltua syötettä käyttää haitallisen JavaScriptin suorittamiseen.
+
+__Kuinka estää XSS hyökkäykset?__
+* Sisääntulevan syötteen suodattaminen heti kun se saapuu.
+* Lähtevän syötteen salaaminen.
+* Käyttämällä asianmukaisia response headereita.
+* Sisällön suojauskäytäntö (Content Security Policy).
+
+
+
+## a) ZAP! Asenna ZAP välimiesproxy ja näytä, että pystyt sieppaamaan liikennettä selaimesta.
 
 
 
