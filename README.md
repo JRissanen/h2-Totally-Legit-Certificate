@@ -36,7 +36,11 @@ __Kuinka estää SQL-injektio?__
 ### PortSwigger: Cross-site scripting
 
 __Mitä tarkoittaa cross-site scripting (XSS)?__
-* 
+* Verkkotietoturvahaavoittuvuus, jonka avulla hyökkääjän on mahdollista kompromisoida/vaarantaa käyttäjien ja sovellusten välinen kommunikointi.
+
+__Miten XSS toimii?__
+* Manipuloimalla haavoittuvaa verkkosivustoa niin, että se palauttaa käyttäjille haitallista JavaScriptiä.
+
 
 
 
