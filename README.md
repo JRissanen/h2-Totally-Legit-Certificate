@@ -97,8 +97,17 @@ https://github.com/JRissanen/h1-OmaLabra
 
 ## a) ZAP! Asenna ZAP välimiesproxy ja näytä, että pystyt sieppaamaan liikennettä selaimesta.
 
+Aloitin avaamalla kali-koneeni ja menemällä selaimella https://www.zaproxy.org/download/ osoitteeseen lataamaan OWASP ZAP paketin. </br>
 
+![Screenshot 2023-04-08 144837](https://user-images.githubusercontent.com/116954333/230719986-6028c7ff-9850-40f9-98aa-5ffe86a0fa17.png)
 
+Seuraavaksi meninin työpöydälläni olevaan kotihakemistoon ja "Downloads" kohdassa oli juuri lataamani ZAP_2.12.0 zip-tiedosto. </br>
+Hiiren oikeaa painiketta zip-tiedoston kohdalla ja sen jälkeen "Extract Here", niin sain zip-tiedoston purettua ja varsinaisen kansion näkyviin. </br>
+Sen jälkeen avasin terminaalin ja siirryin "Downloads" hakemistoon ja edelleen "ZAP_2.12.0" hakemistoon: `cd /Downloads/ZAP_2.12.0`. </br>
+ZAP-hakemstossa oli README-tiedosto, jossa sanottiin, että ZAPin saa auki "zap.sh" skriptin ajamalla. ".sh" päätteiset tiedostot ovat ajettavissa `bash` komennolla, joten ajoin tiedoston: `bash zap.sh` ja OWASP ZAP aukesi. </br>
+Lopuksi valitsin, että haluan session tallennettavaksi oletuspaikkaan (home/kali/.ZAP/sessions) aikaleima nimenä ja jätin lisäksi terminaalin auki, koska OWASP ZAP vaatii sen toimiakseen.
+
+![Screenshot 2023-04-08 150757](https://user-images.githubusercontent.com/116954333/230722157-2659cb3b-c002-4a00-b249-1cbe48166fa8.png)
 
 
 
@@ -120,3 +129,4 @@ https://github.com/JRissanen/h1-OmaLabra
 https://terokarvinen.com/2023/tunkeutumistestaus-2023-kevat/#h2-totally-legit-sertificate </br>
 https://portswigger.net/web-security/sql-injection </br>
 https://portswigger.net/web-security/cross-site-scripting </br>
+https://www.zaproxy.org/download/ </br>
