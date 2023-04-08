@@ -60,7 +60,6 @@ __Kuinka estää XSS hyökkäykset?__
 * Sisällön suojauskäytäntö (Content Security Policy).
 
 ---
-
 Olen tehnyt kaikki harjoitukset omalla tietokoneellani. </br>
 
 Koneen infot: </br>
