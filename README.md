@@ -89,7 +89,8 @@ Video Memory: 128 MB </br>
 Processors: 2 CPU
 
 Varmistan aina ennen tehtävien aloittamista, että molemmat virtuaalikoneet ovat yhteyksissä toisiinsa pingaamalla kali-koneelta metasploitable2-konetta: `ping 192.168.60.3`. </br>
-Varmistan myös aina, ettei kumpikaan virtuaalikone saa verkkoyhteyttä pingaamalla google.com sekä googlen ensisijaista dns-serveriä 8.8.8.8: `ping google.com` ja `ping 8.8.8.8`.
+Varmistan myös aina, ettei kumpikaan virtuaalikone saa verkkoyhteyttä pingaamalla google.com sekä googlen ensisijaista dns-serveriä 8.8.8.8: `ping google.com` ja `ping 8.8.8.8`. </br>
+Virtuaalikoneet ovat verkossa vain silloin kun tehtävät vaativat sitä, eli kun pitää esimerkiksi ladata jokin ohjelma.
 
 Jos haluat enemmän tietoa minun tunkeutumistestausympäristöstä, niin voit lukea artikkelini: </br>
 https://github.com/JRissanen/h1-OmaLabra
@@ -129,7 +130,14 @@ Näin sain tehtyä ja tallennettua uuden CA-sertifikaatin.
 ![Screenshot 2023-04-12 145854](https://user-images.githubusercontent.com/116954333/231451559-5ae67957-27d5-48ef-a5bb-c79192043092.png)
 
 Seuraavaksi avataan selain (käytin Mozilla FireFoxia) ja mennään asetusten kautta sertifikaatteihin ja lisätään OWASP ZAPin sertifikaatti muiden sertifikaattien joukkoon: </br>
-FireFox -> kolme päällekkäistä viivaa -> Settings -> Privacy & Security -> Certificates -> Viev Certificates -> Import -> Valitse: Trust this CA to identify websites -> OK -> OK.
+FireFox -> kolme päällekkäistä viivaa -> Settings -> Privacy & Security -> Certificates -> Viev Certificates -> Import -> </br>
+Valitse: Trust this CA to identify websites -> OK -> OK.
+
+![Screenshot 2023-04-12 170429](https://user-images.githubusercontent.com/116954333/231484459-101f07bc-82e7-4631-84f9-a8dbd1632550.png)
+
+Nyt kun katsoin sertifikaatteja uudestaan, OWASP Root CA:n alta löytyi onnistuneesti lisätty sertifikaatti.
+
+![Screenshot 2023-04-12 170956](https://user-images.githubusercontent.com/116954333/231485009-f35e7ba0-e725-43e5-8b38-b62d6475f326.png)
 
 
 
