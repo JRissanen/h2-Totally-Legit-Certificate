@@ -121,7 +121,12 @@ Päivittämällä verkkosivun ja tutkimalla sitten vastausta eli yläpalkin "Res
 
 ![Screenshot 2023-04-12 144454](https://user-images.githubusercontent.com/116954333/231448736-ed524031-18df-4454-9944-a788944ccab2.png)
 
+## b) Totally Legit Sertificate. Asenna ZAP:n generoima CA-sertifikaatti selaimeen ja osoita testillä, että pystyt sieppaamaan HTTPS-salakirjoitettua liikennettä.
 
+Aloitin menemällä ZAP:ssa yläpalkkiin: Tools -> Options -> Network -> Server Certificates -> Generate -> OK -> Save </br>
+Näin sain tehtyä ja tallennettua uuden CA-sertifikaatin.
+
+![Screenshot 2023-04-12 145854](https://user-images.githubusercontent.com/116954333/231451559-5ae67957-27d5-48ef-a5bb-c79192043092.png)
 
 
 
