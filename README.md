@@ -108,11 +108,18 @@ Seuraavaksi meninin työpöydälläni olevaan kotihakemistoon ja "Downloads" koh
 Hiiren oikeaa painiketta zip-tiedoston kohdalla ja sen jälkeen "Extract Here", niin sain zip-tiedoston purettua ja varsinaisen kansion näkyviin. </br>
 Sen jälkeen avasin terminaalin ja siirryin "Downloads" hakemistoon ja edelleen "ZAP_2.12.0" hakemistoon: `cd /Downloads/ZAP_2.12.0`. </br>
 ZAP-hakemstossa oli README-tiedosto, jossa sanottiin, että ZAPin saa auki "zap.sh" skriptin ajamalla. ".sh" päätteiset tiedostot ovat ajettavissa `bash` komennolla, joten ajoin tiedoston: `bash zap.sh` ja OWASP ZAP aukesi. </br>
-Lopuksi valitsin, että haluan session tallennettavaksi oletuspaikkaan (home/kali/.ZAP/sessions) aikaleima nimenä ja jätin lisäksi terminaalin auki, koska OWASP ZAP vaatii sen toimiakseen.
+Valitsin, että haluan session tallennettavaksi oletuspaikkaan (home/kali/.ZAP/sessions) aikaleima nimenä ja jätin lisäksi terminaalin auki, koska OWASP ZAP vaatii sen toimiakseen.
 
 ![Screenshot 2023-04-08 150757](https://user-images.githubusercontent.com/116954333/230722157-2659cb3b-c002-4a00-b249-1cbe48166fa8.png)
 
+Sen jälkeen valitsin ZAPista: Manual Explore -> URL to explore (käytin tässä Multillidaen etusivua) -> Launch Browser. </br>
+Verkkosivu aukesi, sain kaapattua liikennettä ja Multillidae tuli ZAPin "Sites" kohtaan näkyviin.
 
+![Screenshot 2023-04-12 125833](https://user-images.githubusercontent.com/116954333/231428243-bcac9972-627a-4104-b589-712029b56b8e.png)
+
+Päivittämällä verkkosivun ja tutkimalla sitten vastausta eli yläpalkin "Response" kohtaa, sain esimerkiksi sivuntekijöiden jättämän HTML-kommentin näkyviin.
+
+![Screenshot 2023-04-12 144454](https://user-images.githubusercontent.com/116954333/231448736-ed524031-18df-4454-9944-a788944ccab2.png)
 
 
 
