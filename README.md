@@ -128,7 +128,8 @@ Näin sain tehtyä ja tallennettua uuden CA-sertifikaatin.
 
 ![Screenshot 2023-04-12 145854](https://user-images.githubusercontent.com/116954333/231451559-5ae67957-27d5-48ef-a5bb-c79192043092.png)
 
-
+Seuraavaksi avataan selain (käytin Mozilla FireFoxia) ja mennään asetusten kautta sertifikaatteihin ja lisätään OWASP ZAPin sertifikaatti muiden sertifikaattien joukkoon: </br>
+FireFox -> kolme päällekkäistä viivaa -> Settings -> Privacy & Security -> Certificates -> Viev Certificates -> Import -> Valitse: Trust this CA to identify websites -> OK -> OK.
 
 
 
