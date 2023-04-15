@@ -286,15 +286,15 @@ Viidennessä kohdassa piti antaa oikeudet taulukkojen muokkaamiseen komennolla: 
 Yhdeksännessä kohdassa piti vain valita oikeat vaihtoehdot, jotta saa yhden käyttäjän sijasta kaikkien tiedot.
 ![Screenshot 2023-04-15 175237](https://user-images.githubusercontent.com/116954333/232232195-797e9bc1-7102-4dcb-a5df-e0e3db669696.png)
 
-10. tehtävässä piti käyttää numeerisia SQL-injektioita. Otin mallia ysi kohdan tehtävästä sekä kutos kohdan lopussa olevista esimerkeistä ja informaatiosta. Antamalla `or 1=1` palvelin lukee tiedon `TRUE` arvona ja palauttaa kaikkien käyttäjien tiedot.
+10 tehtävässä piti käyttää numeerisia SQL-injektioita. Otin mallia ysi kohdan tehtävästä sekä kutos kohdan lopussa olevista esimerkeistä ja informaatiosta. Antamalla `or 1=1` palvelin lukee tiedon `TRUE` arvona ja palauttaa kaikkien käyttäjien tiedot.
 
 ![Screenshot 2023-04-15 182940](https://user-images.githubusercontent.com/116954333/232234307-4a902bce-ef67-4565-b8b6-577e247e9151.png)
 
 ![Screenshot 2023-04-15 180112](https://user-images.githubusercontent.com/116954333/232232776-2873987e-0a58-4822-9fde-7fe3e67a8a74.png)
 
-11. tehtävässä piti soveltaa aiemmmin opittua logiikkaa. Vinkki neuvoi aloittamaan SQL-injeltion käyttämällä `'; update` alkua, jonka jälkeen `set` komennolla sai annettua isomman arvon palkalle. Sitten hyödynsin 10. tehtävää ja otin `auth_tan='3SL99A'` koko SQL:n kohteeksi ja lopuksi annoin `--`, joka määritti loppu osan kommenteiksi, eli sitä ei plavelin edes lue ja tehtävä meni läpi. </br>
+12 tehtävässä piti soveltaa aiemmmin opittua logiikkaa. Vinkki neuvoi aloittamaan SQL-injeltion käyttämällä `'; update` alkua, jonka jälkeen `set` komennolla sai annettua isomman arvon palkalle. Sitten hyödynsin 10. tehtävää ja otin `auth_tan='3SL99A'` koko SQL:n kohteeksi ja lopuksi annoin `--`, joka määritti loppu osan kommenteiksi, eli sitä ei plavelin edes lue ja tehtävä meni läpi. </br>
 Lopullinen SQL oli siis: `'; update employees set salary='99999' where auth_tan='3SL99A' --`.
-![Screenshot 2023-04-15 180703](https://user-images.githubusercontent.com/116954333/232233072-5157f9ac-ab18-48f3-96b9-0a9ed40ab6bb.png)
+
 
 
 
