@@ -325,6 +325,19 @@ Tehtävä meni onnistuneesti läpi.
 
 ### A3 Sensitive data exposure: Insecure Login: 2 Let's try
 
+Aloitin taas laittamalla ZAPista liikenteen katkaisun päälle ja painamalla harjoituksen ohjeistamana "Log in" painiketta. </br>
+"Break" välilehdellä ollessani taas klikkailin "Next Break Point" painiketta kunnes näkyviin tuli jotain mielenkiintoista. </br>
+Käyttäjänimi oli "CaptainJack" ja salasana "BlackPearl". Kirjoitin nämä harjoituksen tekstikenttiin ja tehtävä onnistui.
+![Screenshot 2023-04-15 224344](https://user-images.githubusercontent.com/116954333/232250525-70bc3c58-84e3-496d-80f8-d5c9678a7262.png)
+![Screenshot 2023-04-15 224238](https://user-images.githubusercontent.com/116954333/232250531-e2283333-6ccd-4012-99d6-d0e0cb3803e0.png)
+![Screenshot 2023-04-15 224144](https://user-images.githubusercontent.com/116954333/232250543-3edaa8ad-ec2b-4f0e-b73d-bb4ad917e379.png)
+
+
+### A7 Cross Site Scripting (XSS): Cross site scripting
+
+#### 2 What is XSS?
+
+~Loput tehtävät vielä tulossa~
 
 
 
