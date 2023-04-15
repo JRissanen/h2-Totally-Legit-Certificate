@@ -337,7 +337,7 @@ Käyttäjänimi oli "CaptainJack" ja salasana "BlackPearl". Kirjoitin nämä har
 
 #### 2 What is XSS?
 
-~Loput tehtävät vielä tulossa~
+/Loput tehtävät vielä tulossa.../
 
 
 
