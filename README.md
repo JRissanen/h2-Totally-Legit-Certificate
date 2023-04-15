@@ -247,6 +247,24 @@ Sitä klikkaamalla näkymä aukesi developer Toolin oikeaan reunaan ja menemäll
 
 ## f) SELECT * FROM student. Ratkaise [SQLZoo:sta:](https://sqlzoo.net/wiki/SQL_Tutorial) 0 SELECT basics, 2 SELECT from World kohdat 1-5.
 
+Näiden osioiden harjoitukset olivat niin suoraviivaisia, että en koe tarpeelliseksi avata ratkaisuja sen enempää. Laitan vain kuvat omista oikeista vastauksistani. </br>
+Kun luki tehtävän ohjeistuksen ja sitten sovelsi logiikkaa harjoitukseen, niin kaikki onnistui ongelmitta.
+
+### 0 SELECT basics
+![Screenshot 2023-04-15 165249](https://user-images.githubusercontent.com/116954333/232228817-8e9f336d-7dfe-431a-9597-f7d39d538f8a.png)
+![Screenshot 2023-04-15 165333](https://user-images.githubusercontent.com/116954333/232228825-56247b29-4b2b-4b89-904c-8e45267bc3a8.png)
+![Screenshot 2023-04-15 165359](https://user-images.githubusercontent.com/116954333/232228829-56b8c220-3cb8-4431-9dfb-bb535659651d.png)
+
+### 2 SELECT from World kohdat 1-5
+![Screenshot 2023-04-15 164921](https://user-images.githubusercontent.com/116954333/232228856-442272b5-8d18-4b0d-b2de-a9b416695738.png)
+![Screenshot 2023-04-15 165015](https://user-images.githubusercontent.com/116954333/232228862-935be843-e972-430d-b966-619556612237.png)
+![Screenshot 2023-04-15 165054](https://user-images.githubusercontent.com/116954333/232228864-8c0624a3-aed0-4927-af0b-2c8d49574bf2.png)
+![Screenshot 2023-04-15 165119](https://user-images.githubusercontent.com/116954333/232228866-a3bfacf8-4022-45eb-9570-5afd0c939b94.png)
+![Screenshot 2023-04-15 165143](https://user-images.githubusercontent.com/116954333/232228872-cf6915ae-18e7-41ef-a42f-c348bc41d47f.png)
+
+
+## g) Ratkaise WebGoatista*
+
 
 
 
