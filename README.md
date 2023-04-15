@@ -3,7 +3,7 @@ This is a repository for Penetration testing course 2023 Tunkeutumistestaus ict4
 
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
-### PortSwigger: SQL injection
+### [PortSwigger: SQL injection](https://portswigger.net/web-security/sql-injection)
 
 __Mikä on SQL injektio (SQLi)?__
 * SQL-injektio (SQLi) on verkkotietoturvahaavoittuvuus, jonka avulla hyökkääjän on mahdollista häiritä/keskeyttää sovelluksen omaan tietokantaansa tekemiä kyselyitä.
@@ -33,7 +33,7 @@ __Kuinka estää SQL-injektio?__
 * Jotta SQL-injektio voidaan estää tehokkaasti, kyselyssä käytetyn merkkijonon on aina oltava kovakoodattu vakio, eikä se saa koskaan sisältää muuttuvia tietoja.
 
 
-### PortSwigger: Cross-site scripting
+### [PortSwigger: Cross-site scripting](https://portswigger.net/web-security/cross-site-scripting)
 
 __Mitä tarkoittaa cross-site scripting (XSS)?__
 * Verkkotietoturvahaavoittuvuus, jonka avulla hyökkääjän on mahdollista kompromisoida/vaarantaa käyttäjien ja sovellusten välinen kommunikointi.
@@ -219,10 +219,33 @@ Loin itselleni käyttäjän ja pääsin kirjautumaan sisään.
 
 ## e) Vauvavuohi. Ratkaise WebGoatista tehtävät "HTTP Basics" ja "Developer tools".
 
+### HTTP Basics
 
+Ratkaisin nämä tehtävät ZAPin avulla. </br>
+Ensimmäinen kohta oli vain selitys, kuinka HTTP toimii ja mikä on tehtävän tarkoitus. </br>
+Toisessa kohdassa piti vain kirjoittaa nimi ja palvelin palautti nimen takaisin väärinpäin. </br>
+Kolmas tehtävä oli määrittää kumpaa HTTP-metodia (POST vai GET) WebGoat käytti tässä harjoituksessa. GETiä käytetään, kun pyydetään tietoa tarkasti määritellystä kohteesta. POSTia käytetään kun lähetetään tietoa palvelimelle, joten oikea vastaus on POST. </br>
+Magic numberin sai selville ZAPin avulla kun katsoi mitä verkkosivulla tapahtuu kun sen päivittää. Magic Number vaihtui joka kerta päivityksen yhteydessä.
 
+![Screenshot 2023-04-15 153303](https://user-images.githubusercontent.com/116954333/232224130-04936330-af79-49e2-89c5-32d615c2689d.png)
 
+### Developer Tools
 
+Osion Developer Tools-kohdat 1-3 ja 5 kertoivat, miten selaimen Developer Tool-työkalu yksinkertaistettuna toimii. </br>
+Kohdan 4 sain ratkaistua ohjeita seuraamalla. Avasin Developer Toolin F12 näppäimellä ja menin "Console" välilehdelle. </br>
+Tyhjensin konsolin näppäinyhdistelmällä: `Ctrl + Shift + L` ja kirjoitin tyhkään kenttään "allow pasting", niin pystyin copy pasteamaan tekstiä konsoliin. </br>
+Sitten vain seurasin ohjeita ja kopioin tehtävän funktion ja syötin sen konsoliin. Kopion funktion antaman numeron tekstikenttään ja harjoitus meni läpi.
+
+![Screenshot 2023-04-15 154959](https://user-images.githubusercontent.com/116954333/232226129-1603ba92-2398-45dc-b71f-f99d7bf3a5f6.png)
+
+Kohdan 6 sain ratkaistua ohjeita seuraamalla. Avasin Developer Toolin F12 näppäimellä ja menin "Network" välilehdelle. </br>
+Tyhjensin näkymän vasemmassa yläreunassa olevasta roskakori-kuvakkeesta ja painoin "Go!" näppäintä. </br>
+Tyhjennetystä näkymästä oli helppo havaita oikea HTTP-pyyntö. Se oli lisäksi ainoa POST-metodin pyyntö sekä tiedostotyypiltään "network". </br>
+Sitä klikkaamalla näkymä aukesi developer Toolin oikeaan reunaan ja menemällä "Request" välilehdelle, löysin etsimäni numeron ja syötin sen harjoituksen tekstikenttään.
+
+![Screenshot 2023-04-15 160429](https://user-images.githubusercontent.com/116954333/232226479-821696f8-a61a-45c4-a8f1-cc48a67e6fb8.png)
+
+## f) SELECT * FROM student. Ratkaise [SQLZoo:sta:](https://sqlzoo.net/wiki/SQL_Tutorial) 0 SELECT basics, 2 SELECT from World kohdat 1-5.
 
 
 
@@ -235,6 +258,15 @@ https://portswigger.net/web-security/cross-site-scripting </br>
 https://www.zaproxy.org/download/ </br>
 https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/?fromSearch=owasp </br>
 https://github.com/miljonka/Tunkeutumistestaus/wiki/h2_Totally-Legit-Sertificate </br>
+https://github.com/WebGoat/WebGoat/issues/1216 </br>
+https://sqlzoo.net/wiki/SQL_Tutorial </br>
+
+
+
+
+
+
+
 
 
 
