@@ -173,10 +173,28 @@ Vaihdoin määrityksen lukemaan "security=low" ja painoin ZAPin yläpalkissa ole
 
 Siirryin takaisin DVWA:n verkkosivulle ja sivu latautui normaalisti, mutta kohdassa "Security Level:" luki nyt "low", joten pyynnön kaappaus ja muuttaminen onnistui omalta osaltani.
 
+![Screenshot 2023-04-15 121728](https://user-images.githubusercontent.com/116954333/232205435-21f8becb-8e87-473c-948e-37bfd498cbc3.png)
+
 Muutos ei kuitenkaan ollut pysyvä, koska jos nyt päivitin sivun uudestaan, se muuttui takaisin tasolle "high", mutta tehtävän kannalta kokeilu oli silti onnistunut. </br>
 DVWA:n sivuilta pystyy myös kohdasta "DVWA Security" muuttamaan sivun suojauksen itse joko high/medium/low, jolloin sivu myös tallentaa valitun tason.
 
 ## d) Vuohi. Asenna WebGoat ja kokeile, että pääset kirjautumaan sisään.
+
+Seurasin tässä tehtävässä Tero Karvisen [Install Webgoat 8 - Learn Web Pentesting](https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/?fromSearch=owasp) artikkelia.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -187,6 +205,7 @@ https://portswigger.net/web-security/sql-injection </br>
 https://portswigger.net/web-security/cross-site-scripting </br>
 https://www.zaproxy.org/download/ </br>
 https://www.youtube.com/playlist?list=PLH8n_ayg-60J9i3nsLybper-DR3zJw6Z5 </br>
+https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/?fromSearch=owasp </br>
 
 
 
