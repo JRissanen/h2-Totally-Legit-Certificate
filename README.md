@@ -303,6 +303,8 @@ Lopullinen SQL: `'; update employees set salary='99999' where auth_tan='3SL99A' 
 13 tehtävä ratkesi samalla logiikalla kuin 12 tehtävä. Ensin `';`, joka ohittaa nimikyselyn ja sen jälkeen kohdassa neljä opetettu `drop`, joka poistaa tiedot. Lopullinen SQL: `'; drop table access_log --`
 ![Screenshot 2023-04-15 190607](https://user-images.githubusercontent.com/116954333/232236391-e77c9de5-dba4-488a-8842-a632fc02749e.png)
 
+### A2 Broken authentication: Authentication bypasses: 2 2FA Password Reset
+
 
 
 
