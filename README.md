@@ -189,10 +189,10 @@ Aluksi tuli asentaa työkaluja/ohjelmia, jotta WebGoatin käyttö onnistuisi ja 
 "bash-completion" täyttää komennot automaattisesti tabulaattoria-nappia painaessa.
 
 Kaikki nämä työkalut latasin ohjeiden mukaan: </br>
-`
+```
 $ sudo apt-get update
 $ sudo apt-get -y install openjdk-11-jre ufw wget bash-completion
-`
+```
 
 
 
