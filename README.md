@@ -305,6 +305,29 @@ Lopullinen SQL: `'; update employees set salary='99999' where auth_tan='3SL99A' 
 
 ### A2 Broken authentication: Authentication bypasses: 2 2FA Password Reset
 
+Tehtävän annosssa mainittiin proxyn käyttäminen, joten tutkin liikennettä ZAPin kautta. </br>
+Aluksi laitoin ZAPista liikenteen katkaisun päälle vihreää palloa painamalla ja sen jälkeen syötin A2 harjoituksen molempiin tekstikenttiin pelkän yksittäisen merkin `'`. Sen jälkeen painamalla "Next Break Point" painiketta pääsin "Break" välilehdellä aina seuraavaan kohtaan, kunnes näkyviin tuli antamani syötteiden tulostus.
+
+![Screenshot 2023-04-15 215018](https://user-images.githubusercontent.com/116954333/232249474-2b03568f-f52b-49a6-abd3-e72a84adb801.png)
+
+![Screenshot 2023-04-15 215209](https://user-images.githubusercontent.com/116954333/232249612-9c2ad3d7-9db7-4ca3-a4fc-1173166e0059.png)
+
+Katsoin tehtävän vinkeistä apua ja siellä neuvottiin suraavaa:
+![Screenshot 2023-04-15 215500](https://user-images.githubusercontent.com/116954333/232249655-5a9e6ff5-699c-4086-86c6-a2ed6f320893.png)
+
+Vinkkien mukaan ei tullut poistaa koko "secQuestion0" kohtaa, vaan vain sen parametria tarvitsisi muuttaa. </br>
+Muutinkin sitten ZAPista "Break" välilehdellä näkyvää syötettä siten, että vaihdoin "secQuestion0" & "secQuestion1" -> "secQuestion5" & "secQuestion6", sekä antamani syötteen `'` vaihdoin tekstiin `pass`.
+![Screenshot 2023-04-15 215310](https://user-images.githubusercontent.com/116954333/232249839-070e7367-d653-4f13-be50-fee4ef67b26d.png)
+
+Tehtävä meni onnistuneesti läpi.
+![Screenshot 2023-04-15 220000](https://user-images.githubusercontent.com/116954333/232249861-b81ab7d0-31ac-4ffe-baa9-f842577b501c.png)
+![Screenshot 2023-04-15 215930](https://user-images.githubusercontent.com/116954333/232249867-8b6fbac6-3469-418e-bfce-6bff64418fe0.png)
+
+### A3 Sensitive data exposure: Insecure Login: 2 Let's try
+
+
+
+
 
 
 
