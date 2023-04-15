@@ -183,10 +183,10 @@ DVWA:n sivuilta pystyy myös kohdasta "DVWA Security" muuttamaan sivun suojaukse
 Seurasin tässä tehtävässä Tero Karvisen [Install Webgoat 8 - Learn Web Pentesting](https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/?fromSearch=owasp) artikkelia.
 
 Aluksi tuli asentaa työkaluja/ohjelmia, jotta WebGoatin käyttö onnistuisi ja olisi turvallista: </br>
-"openjdk-11-jre" mahdollistaa Java-sovellusten pyörittämisen, esim. WebGoat. </br>
-"ufw" on palomuuri, jonka käyttö on suotavaa haavoittuvaisen WebGoatin kanssa. </br>
-"wget" mahdollistaa tiedostojen lataamisen suoraan verkkosivuilta. `wget https://<verkkosivu>/<tiedosto>`. </br>
-"bash-completion" täyttää komennot automaattisesti tabulaattoria-nappia painaessa.
+__openjdk-11-jre__ mahdollistaa Java-sovellusten pyörittämisen, esim. WebGoat. </br>
+__ufw__ on palomuuri, jonka käyttö on suotavaa haavoittuvaisen WebGoatin kanssa. </br>
+__wget__ mahdollistaa tiedostojen lataamisen suoraan verkkosivuilta. `wget https://<verkkosivu>/<tiedosto>`. </br>
+__bash-completion__ täyttää komennot automaattisesti tabulaattoria-nappia painaessa.
 
 Kaikki nämä työkalut latasin ohjeiden mukaan: </br>
 ```
