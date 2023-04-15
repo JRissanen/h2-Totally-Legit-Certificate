@@ -139,9 +139,15 @@ Nyt kun katsoin sertifikaatteja uudestaan, OWASP Root CA:n alta löytyi onnistun
 
 ![Screenshot 2023-04-12 170956](https://user-images.githubusercontent.com/116954333/231485009-f35e7ba0-e725-43e5-8b38-b62d6475f326.png)
 
+ZAPin mukaan, jos avaa selaimen ZAPin kautta (niinkuin aiemmin tein kohdasta "Manual Explore -> Launch Browser"), niin proxy asetukset ovat silloin automaattisesti oikein. ZAP määrittää localhostin portin 8080 proxy serveriksi, jonka läpi kaikki liikenne kulkee. Tämän informaation sain menemällä selaimessa osoitteeseen `https://localhost:8080`.
 
+![Screenshot 2023-04-13 202548](https://user-images.githubusercontent.com/116954333/232200842-32490c28-ba95-43a8-a339-586106e96cd3.png)
 
+Lopuksi kirjoitin googleen vain sanan "haku" ja katsoin onnistuinko sieppaamaan liikennettä. Mitään ongelmia ei ainakaan ollut sertifikaattien kanssa ja kaikki siepatut tiedot tulivat ZAPiin näkyviin, joten kai se onnistui.
 
+![Screenshot 2023-04-13 204622](https://user-images.githubusercontent.com/116954333/232200969-6929c81b-4fa2-48fb-8023-ca82d5d6a21a.png)
+
+## d) Vuohi. Asenna WebGoat ja kokeile, että pääset kirjautumaan sisään.
 
 
 
