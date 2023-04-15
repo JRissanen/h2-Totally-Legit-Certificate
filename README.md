@@ -194,13 +194,30 @@ $ sudo apt-get update
 $ sudo apt-get -y install openjdk-11-jre ufw wget bash-completion
 ```
 
+Laitoin äsken asennetun __ufw__ palomuurin päälle komennolla: `sudo ufw enable`. </br>
+Se onkin ilmeisesti jo päällä ja menee päälle aina kun järjestelmä käynnistetään. 
+
+![Screenshot 2023-04-15 140241](https://user-images.githubusercontent.com/116954333/232210125-7c01f9d9-b1f5-4d7f-8db5-a567edd793e2.png)
+
+Seuraavaksi latasin WebGoatin Teron sivuilta: </br>
+`$ wget https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/webgoat-server-8.0.0.M26.jar`.
+
+![Screenshot 2023-04-15 140809](https://user-images.githubusercontent.com/116954333/232210339-f5446543-f1c3-4cb2-b438-05c116642bff.png)
+
+Teron artikkelia lukiessani huomasin, että WebGoatin oletus portti on sama kuin ZAPilla, 8080, joten sain vinkin erään kurssilaiseni raportista: </br>
+[Miika](https://github.com/miljonka/Tunkeutumistestaus/wiki/h2_Totally-Legit-Sertificate) oli huomannut saman porttiongelman ja löytänyt ratkaisun [WebGoatin GitHub-sivuilta](https://github.com/WebGoat/WebGoat/issues/1216).
+
+Eli käytin itsekin komentoa: `WEBGOAT_PORT=8081 java -jar webgoat-server-8.0.0.M26.jar`, jotta portti ei olisi ZAPin käyttämä 8080, vaan siitä seuraava 8081. </br>
+Terminaalissa kaikki näytti olevan kunnossa ja menemällä selaimella osoitteeseen `http://localhost:8081/WebGoat/login`, pääsin sisäänkirjautumis sivulle.
+
+![Screenshot 2023-04-15 142053](https://user-images.githubusercontent.com/116954333/232212019-b7eedec2-8353-41bc-8a12-d206368e1397.png)
+
+Loin itselleni käyttäjän ja pääsin kirjautumaan sisään.
+
+![Screenshot 2023-04-15 143357](https://user-images.githubusercontent.com/116954333/232213883-904b2876-d8f8-4b56-934a-68a452649f9e.png)
 
 
-
-
-
-
-
+## e) Vauvavuohi. Ratkaise WebGoatista tehtävät "HTTP Basics" ja "Developer tools".
 
 
 
@@ -217,6 +234,9 @@ https://portswigger.net/web-security/sql-injection </br>
 https://portswigger.net/web-security/cross-site-scripting </br>
 https://www.zaproxy.org/download/ </br>
 https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/?fromSearch=owasp </br>
+https://github.com/miljonka/Tunkeutumistestaus/wiki/h2_Totally-Legit-Sertificate </br>
+
+
 
 
 
