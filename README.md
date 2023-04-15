@@ -297,11 +297,11 @@ Yhdeksännessä kohdassa piti vain valita oikeat vaihtoehdot, jotta saa yhden k�
 
 
 12 tehtävässä piti soveltaa aiemmmin opittua logiikkaa. Vinkki neuvoi aloittamaan SQL-injeltion käyttämällä `'; update` alkua, jonka jälkeen `set` komennolla sai annettua isomman arvon palkalle. Sitten hyödynsin 10. tehtävää ja otin `auth_tan='3SL99A'` koko SQL:n kohteeksi ja lopuksi annoin `--`, joka määritti loppu osan kommenteiksi, eli sitä ei palvelin edes lue ja tehtävä meni läpi. </br>
-Lopullinen SQL oli siis: `'; update employees set salary='99999' where auth_tan='3SL99A' --`.
+Lopullinen SQL: `'; update employees set salary='99999' where auth_tan='3SL99A' --`.
 ![Screenshot 2023-04-15 185523](https://user-images.githubusercontent.com/116954333/232235487-f786ea19-2098-4f54-aead-bbf330a13565.png)
 
-
-
+13 tehtävä ratkesi samalla logiikalla kuin 12 tehtävä. Ensin `';`, joka ohittaa nimikyselyn ja sen jälkeen kohdassa neljä opetettu `drop`, joka poistaa tiedot. Lopullinen SQL: `'; drop table access_log --`
+![Screenshot 2023-04-15 190607](https://user-images.githubusercontent.com/116954333/232236391-e77c9de5-dba4-488a-8842-a632fc02749e.png)
 
 
 
