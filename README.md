@@ -292,8 +292,13 @@ Yhdeksännessä kohdassa piti vain valita oikeat vaihtoehdot, jotta saa yhden k�
 
 ![Screenshot 2023-04-15 180112](https://user-images.githubusercontent.com/116954333/232232776-2873987e-0a58-4822-9fde-7fe3e67a8a74.png)
 
-12 tehtävässä piti soveltaa aiemmmin opittua logiikkaa. Vinkki neuvoi aloittamaan SQL-injeltion käyttämällä `'; update` alkua, jonka jälkeen `set` komennolla sai annettua isomman arvon palkalle. Sitten hyödynsin 10. tehtävää ja otin `auth_tan='3SL99A'` koko SQL:n kohteeksi ja lopuksi annoin `--`, joka määritti loppu osan kommenteiksi, eli sitä ei plavelin edes lue ja tehtävä meni läpi. </br>
+11 tehtävässä piti soveltaa samaa logiikkaa kuin 10 tehtävässäkin.
+![Screenshot 2023-04-15 180703](https://user-images.githubusercontent.com/116954333/232235529-92fdc149-768d-4cc2-834d-52293df136de.png)
+
+
+12 tehtävässä piti soveltaa aiemmmin opittua logiikkaa. Vinkki neuvoi aloittamaan SQL-injeltion käyttämällä `'; update` alkua, jonka jälkeen `set` komennolla sai annettua isomman arvon palkalle. Sitten hyödynsin 10. tehtävää ja otin `auth_tan='3SL99A'` koko SQL:n kohteeksi ja lopuksi annoin `--`, joka määritti loppu osan kommenteiksi, eli sitä ei palvelin edes lue ja tehtävä meni läpi. </br>
 Lopullinen SQL oli siis: `'; update employees set salary='99999' where auth_tan='3SL99A' --`.
+![Screenshot 2023-04-15 185523](https://user-images.githubusercontent.com/116954333/232235487-f786ea19-2098-4f54-aead-bbf330a13565.png)
 
 
 
