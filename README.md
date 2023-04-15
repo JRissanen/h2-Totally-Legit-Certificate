@@ -272,8 +272,25 @@ Kohdassa 2 haluttiin "Bob Franco" nimisen työntekijän osasto selville. </br>
 SQLZoo:sta opittujen harjoitusten kautta sovelsin oppimaani tähänkin kohtaan ja ratkaisu oli suoraviivainen. </br>
 Valitaan komennolla `select` halutun tiedon kategoria `department` taulukosta `employees`</br>
 Annetaan ehdoksi `where` jokin Bob Francon tiedoista `first_name = 'Bob'`.
-
 ![Screenshot 2023-04-15 172134](https://user-images.githubusercontent.com/116954333/232230239-e2728140-fc67-442e-bd3a-ce872e649e12.png)
+
+Kolmannessa kohdassa piti tarkistaa sivun vinkeistä, miten SQL-injektio piti muodostaa ja tajusin, että piti käyttää `set` komentoa, jonka jälkeen aiemmin opittua logiikkaa soveltamalla tehtävä ratkesi.
+![Screenshot 2023-04-15 173233](https://user-images.githubusercontent.com/116954333/232230749-fba615eb-89c0-4e86-bb44-b19be06a2c43.png)
+
+Neljännessä kohdassa piti käyttää komentoja `alter` ja `add`.
+![Screenshot 2023-04-15 174124](https://user-images.githubusercontent.com/116954333/232231143-a8a80cec-8aab-4866-9d9d-7f28976bcac6.png)
+
+Viidennessä kohdassa piti antaa oikeudet taulukkojen muokkaamiseen komennolla: `grant`.
+![Screenshot 2023-04-15 174747](https://user-images.githubusercontent.com/116954333/232231895-f61b952c-0511-40dc-b724-31b6b1b36dc5.png)
+
+Yhdeksännessä kohdassa piti vain valita oikeat vaihtoehdot, jotta saa yhden käyttäjän sijasta kaikkien tiedot.
+![Screenshot 2023-04-15 175237](https://user-images.githubusercontent.com/116954333/232232195-797e9bc1-7102-4dcb-a5df-e0e3db669696.png)
+
+Kymmenennessä tehtävässä piti käyttää numeerisia SQL-injektioita.
+![Screenshot 2023-04-15 180112](https://user-images.githubusercontent.com/116954333/232232776-2873987e-0a58-4822-9fde-7fe3e67a8a74.png)
+
+
+
 
 
 
