@@ -265,6 +265,18 @@ Kun luki tehtävän ohjeistuksen ja sitten sovelsi logiikkaa harjoitukseen, niin
 
 ## g) Ratkaise WebGoatista*
 
+### A1 Injection (intro)
+
+Kohdat 1 ja 6-8 kertoivat, miten SQL-injectioita käytetään. </br>
+Kohdassa 2 haluttiin "Bob Franco" nimisen työntekijän osasto selville. </br>
+SQLZoo:sta opittujen harjoitusten kautta sovelsin oppimaani tähänkin kohtaan ja ratkaisu oli suoraviivainen. </br>
+Valitaan komennolla `select` halutun tiedon kategoria `department` taulukosta `employees`</br>
+Annetaan ehdoksi `where` jokin Bob Francon tiedoista `first_name = 'Bob'`.
+
+![Screenshot 2023-04-15 172134](https://user-images.githubusercontent.com/116954333/232230239-e2728140-fc67-442e-bd3a-ce872e649e12.png)
+
+
+
 
 
 
