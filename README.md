@@ -147,10 +147,36 @@ Lopuksi kirjoitin googleen vain sanan "haku" ja katsoin onnistuinko sieppaamaan 
 
 ![Screenshot 2023-04-13 204622](https://user-images.githubusercontent.com/116954333/232200969-6929c81b-4fa2-48fb-8023-ca82d5d6a21a.png)
 
+## c) Intercept. Pysäytä hakupyyntö, muokkaa sitä ja päästä se palvelimelle.
+
+Tässä tehtävässä kirjauduin ensin DVWA:n (Damn Vulnerable Web Application, v1.0.7) sivuille, sen antamilla tunnuksilla (käyttäjä: admin, salasana: password). </br>
+Aikomukseni oli kokeilla, pystynkö muuttamaan sivun "Security Level" tasoa tasolta "High" tasoon "Low", kaappaamalla liikenteen sivun päivittyessä ja muuttamalla tietoa.
+
+![Screenshot 2023-04-15 113924](https://user-images.githubusercontent.com/116954333/232202533-c058c77d-f3b9-44f8-9cd5-23356bae9119.png)
+
+Nyt kun DVWA on selaimessa auki, siirryin ZAPin näkymään ja painoin yläpalkissa olevaa pientä vihreää palloa, joka katkaisee kaikki verkkosivun pyynnöt ja vastaukset. Pallo myös muuttui väriltään punaiseksi.
+
+![Screenshot 2023-04-15 115107](https://user-images.githubusercontent.com/116954333/232202619-60e7d54f-255c-478c-8d91-4a3065c8a43b.png)
+
+Sitten siirryin takaisin DWVA:n verkkosivulle ja painoin "Refresh" nappia ja huomasin, että sivu jäi lataamaan, koska ZAP on tällä hetkellä pysäyttänyt kaiken liikenteen.
+
+![Screenshot 2023-04-15 115318](https://user-images.githubusercontent.com/116954333/232202704-f115d824-c5d0-46f9-a089-e419e5edb296.png)
+
+Seuraavaksi tutkin ZAP:ssa login.php näkymää "Break" välilehdeltä. </br>
+Tässä näkymässä näkyvää tekstiä voi itse editoida ja huomasin kohdan "Cookie:" vieressä olevan "security=high" määrityksen.
+
+![Screenshot 2023-04-15 120351](https://user-images.githubusercontent.com/116954333/232203236-22c1a48f-9ae8-4c99-af14-b12ea6c65f09.png)
+
+Vaihdoin määrityksen lukemaan "security=low" ja painoin ZAPin yläpalkissa olevaa "play" nappia, joka lopetti verkkosivun liikenteen pysäyttämisen ja päästi sen taas eteenpäin.
+
+![Screenshot 2023-04-15 121152](https://user-images.githubusercontent.com/116954333/232203887-e3a9ff2f-9bcf-413a-8afe-49391480c711.png)
+
+Siirryin takaisin DVWA:n verkkosivulle ja sivu latautui normaalisti, mutta kohdassa "Security Level:" luki nyt "low", joten pyynnön kaappaus ja muuttaminen onnistui omalta osaltani.
+
+Muutos ei kuitenkaan ollut pysyvä, koska jos nyt päivitin sivun uudestaan, se muuttui takaisin tasolle "high", mutta tehtävän kannalta kokeilu oli silti onnistunut. </br>
+DVWA:n sivuilta pystyy myös kohdasta "DVWA Security" muuttamaan sivun suojauksen itse joko high/medium/low, jolloin sivu myös tallentaa valitun tason.
+
 ## d) Vuohi. Asenna WebGoat ja kokeile, että pääset kirjautumaan sisään.
-
-
-
 
 
 
