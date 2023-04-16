@@ -346,7 +346,8 @@ En onnistunut tekemään ohjeiden mukaan syöttämällä alertin `javascript:ale
 #### 7 Try It! Reflected XSS
 
 Tehtävässä piti selvittää XSS:lle altis tekstikenttä ja syöttää siihen scripti. </br>
-Käytin hyödyksi kohdassa kaksi neuvottua scriptin pätkää ja kirjoitin kohdan "Enter your credit card number:" tekstikenttään: `<script>alert("Alert Test")</script>`. </br>
+Käytin hyödyksi kohdassa kaksi neuvottua scriptin pätkää ja kirjoitin kohdan "Enter your credit card number:" tekstikenttään: `<script>alert("Alert Test")</script>`.
+
 ![Screenshot 2023-04-16 113309](https://user-images.githubusercontent.com/116954333/232286965-10812b24-04e6-49e5-ab2e-adabdcb18034.png)
 ![Screenshot 2023-04-16 113112](https://user-images.githubusercontent.com/116954333/232286973-37f829f3-d4ae-4fc9-ad29-52956ad82ea3.png)
 
@@ -355,6 +356,17 @@ Käytin hyödyksi kohdassa kaksi neuvottua scriptin pätkää ja kirjoitin kohda
 
 #### 3 "Basic Get CSRF Exercise"
 
+Tähän tehtävään en ymmärtänyt ratkaisua edes tehtävän vinkkien avulla, joten googletin vastausta ja löysin [Evidence Mondayn](https://medium.com/@evidencemonday/webgoat-cross-site-request-forgery-solution-1c069985e80f) artikkelin hänen ratkaisustaan tehtävään, joten seurasin itsekin artikkelia.
+
+Tehtävän tarkoituksena oli siis luoda oma `.html`-tiedosto, joka imitoi WebGoatin harjoituksen "Submit Query" painiketta hyödyntäen `basic-get-flag` tiedostotyyppiä. Seuraamassani artikkelissa oli valmis html-pohja, joten kopioin sen ja muutin tiedoista vain portiksi 8081, jonka olin itse määrittänyt WebGoatille. Talletin tiedoston `csrf.html` työpöydälleni, kopioin sen polun selaimeni hakukenttään, josta aukesi html-tiedoston määrittelemä "Submit" painike, jota painamalla aukesi näkymä, joka antoi numerosarjan ja onnitteluviestin tehtävän suorittamisesta. Sitten piti vain liittää saatu numerosarja WebGoat harjoituksen tekstikenttään ja harjoitus oli suoritettu.
+
+![Screenshot 2023-04-16 130504](https://user-images.githubusercontent.com/116954333/232294045-b44898d2-d7b7-48cc-9a3d-a33407086281.png)
+![Screenshot 2023-04-16 130658](https://user-images.githubusercontent.com/116954333/232294342-072748d8-8416-4159-aa89-ee14f154b5df.png)
+![Screenshot 2023-04-16 124702](https://user-images.githubusercontent.com/116954333/232294970-23e442d7-5484-4424-98e9-8b800bbf7629.png)
+![Screenshot 2023-04-16 124808](https://user-images.githubusercontent.com/116954333/232295028-81a028f0-2661-4a64-89e8-9986a4c088d6.png)
+
+
+#### 4 "Post a review on someone else’s behalf"
 
 
 
@@ -371,7 +383,7 @@ https://terokarvinen.com/2020/install-webgoat-web-pentest-practice-target/?fromS
 https://github.com/miljonka/Tunkeutumistestaus/wiki/h2_Totally-Legit-Sertificate </br>
 https://github.com/WebGoat/WebGoat/issues/1216 </br>
 https://sqlzoo.net/wiki/SQL_Tutorial </br>
-
+https://medium.com/@evidencemonday/webgoat-cross-site-request-forgery-solution-1c069985e80f </br>
 
 
 
