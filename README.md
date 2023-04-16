@@ -338,8 +338,7 @@ Käyttäjänimi oli "CaptainJack" ja salasana "BlackPearl". Kirjoitin nämä har
 #### 2 What is XSS?
 
 Tehtävässä piti testata javascript alertia. </br>
-En onnistunut tekemään ohjeiden mukaan syöttämällä alertin `javascript:alert(document.cookie);` haku kenttään, joten käytin Developer Toolin konsolia. </br>
-Cookiet olivat samat molemmilla sivuilla.
+En onnistunut tekemään ohjeiden mukaan syöttämällä alertin `javascript:alert(document.cookie);` haku kenttään, joten käytin Developer Toolin konsolia. Cookiet olivat samat molemmilla sivuilla.</br>
 ![Screenshot 2023-04-16 112001](https://user-images.githubusercontent.com/116954333/232286472-d3d8352f-0b4e-40b3-8fa5-d2c2dc9fecdd.png)
 ![Screenshot 2023-04-16 112418](https://user-images.githubusercontent.com/116954333/232286481-c8544a16-085a-4ea7-95be-fca3822e7acc.png)
 
@@ -347,7 +346,7 @@ Cookiet olivat samat molemmilla sivuilla.
 #### 7 Try It! Reflected XSS
 
 Tehtävässä piti selvittää XSS:lle altis tekstikenttä ja syöttää siihen scripti. </br>
-Käytin hyödyksi kohdassa kaksi neuvottua scriptin pätkää ja kirjoitin kohdan "Enter your credit card number:" tekstikenttään: `<script>alert("Alert Test")</script>`.
+Käytin hyödyksi kohdassa kaksi neuvottua scriptin pätkää ja kirjoitin kohdan "Enter your credit card number:" tekstikenttään: `<script>alert("Alert Test")</script>`. </br>
 ![Screenshot 2023-04-16 113309](https://user-images.githubusercontent.com/116954333/232286965-10812b24-04e6-49e5-ab2e-adabdcb18034.png)
 ![Screenshot 2023-04-16 113112](https://user-images.githubusercontent.com/116954333/232286973-37f829f3-d4ae-4fc9-ad29-52956ad82ea3.png)
 
