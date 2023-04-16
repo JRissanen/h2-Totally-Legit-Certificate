@@ -358,7 +358,19 @@ Käytin hyödyksi kohdassa kaksi neuvottua scriptin pätkää ja kirjoitin kohda
 
 Tähän tehtävään en ymmärtänyt ratkaisua edes tehtävän vinkkien avulla, joten googletin vastausta ja löysin [Evidence Mondayn](https://medium.com/@evidencemonday/webgoat-cross-site-request-forgery-solution-1c069985e80f) artikkelin hänen ratkaisustaan tehtävään, joten seurasin itsekin artikkelia.
 
-Tehtävän tarkoituksena oli siis luoda oma `.html`-tiedosto, joka imitoi WebGoatin harjoituksen "Submit Query" painiketta hyödyntäen `basic-get-flag` tiedostotyyppiä. Seuraamassani artikkelissa oli valmis html-pohja, joten kopioin sen ja muutin tiedoista vain portiksi 8081, jonka olin itse määrittänyt WebGoatille. Talletin tiedoston `csrf.html` työpöydälleni, kopioin sen polun selaimeni hakukenttään, josta aukesi html-tiedoston määrittelemä "Submit" painike, jota painamalla aukesi näkymä, joka antoi numerosarjan ja onnitteluviestin tehtävän suorittamisesta. Sitten piti vain liittää saatu numerosarja WebGoat harjoituksen tekstikenttään ja harjoitus oli suoritettu.
+Tehtävän tarkoituksena oli siis luoda oma `.html`-tiedosto, joka imitoi WebGoatin harjoituksen "Submit Query" painiketta hyödyntäen `basic-get-flag` tiedostotyyppiä. Seuraamassani artikkelissa oli valmis html-pohja, joten kopioin sen ja muutin tiedoista vain portiksi 8081, jonka olin itse määrittänyt WebGoatille. Talletin tiedoston `csrf.html` työpöydälleni, kopioin sen polun selaimeni hakukenttään, josta aukesi html-tiedoston määrittelemä "Submit" painike, jota painamalla aukesi näkymä, joka antoi numerosarjan ja onnitteluviestin tehtävän suorittamisesta. Sitten piti vain liittää saatu numerosarja WebGoat harjoituksen tekstikenttään ja harjoitus oli suoritettu. </br>
+Html: </br>
+```
+<html>
+<body>
+ <form action="http://localhost:8081/WebGoat/csrf/basic-get-flag" method="POST">
+  <input name="csrf" value="false" type="hidden">
+  <input name="submit" type="hidden" value="submit-Query">
+  <input type="submit" value="Submit">
+ </form>
+</body>
+</html>
+```
 
 ![Screenshot 2023-04-16 130504](https://user-images.githubusercontent.com/116954333/232294045-b44898d2-d7b7-48cc-9a3d-a33407086281.png)
 ![Screenshot 2023-04-16 130658](https://user-images.githubusercontent.com/116954333/232294342-072748d8-8416-4159-aa89-ee14f154b5df.png)
